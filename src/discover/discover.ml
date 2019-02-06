@@ -23,7 +23,7 @@ let flags () =
       []
   in
   let default_flags =
-    ["-D_DEFAULT_SOURCE --std=c99 -Wall -Wextra -O3 -Wno-implicit-fallthrough"]
+    ["-D_DEFAULT_SOURCE --std=c99 -Wall -Wextra -O3 -Wno-unused-function -Wno-implicit-fallthrough"]
   in
   default_flags @ accelerate_flags
 
