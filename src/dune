@@ -2,7 +2,7 @@
 
 (library
  (public_name nocrypto)
- (libraries cstruct ocplib-endian sexplib zarith)
+ (libraries cstruct ocplib-endian sexplib zarith-virtual)
  (preprocess (pps ppx_sexp_conv))
  (c_names misc stubs md5 sha1 sha256 sha512 aes_generic
           aes_aesni des_generic ghash_pclmul ghash_generic)

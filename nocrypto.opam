@@ -24,6 +24,8 @@ depends: [
   "zarith"
   "sexplib"
   "ocplib-endian"
+  "lwt"
+  "mirage-entropy"
 ]
 depopts: ["cstruct-lwt" "lwt"]
 conflicts: [
@@ -36,3 +38,5 @@ build: [
   ["dune" "runtest" "-p" name "-j" jobs] {with-test}
 ]
 dev-repo: "git+https://github.com/mirleft/ocaml-nocrypto.git"
+name: "nocrypto"
+version: "0.5.4-1"
