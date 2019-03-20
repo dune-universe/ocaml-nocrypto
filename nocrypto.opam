@@ -24,6 +24,7 @@ depends: [
   "zarith"
   "sexplib"
   "ocplib-endian"
+  "bigarray-compat"
 ]
 depopts: ["cstruct-lwt" "lwt"]
 conflicts: [
