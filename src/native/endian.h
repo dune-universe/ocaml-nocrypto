@@ -21,6 +21,12 @@
 #define be64toh(x) OSSwapBigToHostInt64(x)
 #define le64toh(x) OSSwapLittleToHostInt64(x)
 
+#elif defined(__MINIOS__)
+
+#include <byteorder.h>
+#define htobe64(x) cpu_to_be64(x)
+#define be64toh(x) be64_to_cpu(x)
+
 #else
 
 /* Needs _DEFAULT_SOURCE with glibc */
