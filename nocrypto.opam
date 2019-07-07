@@ -21,6 +21,8 @@ depends: [
   "ocplib-endian"
   "zarith"
   "sexplib"
+  "bigarray-compat"
+  "ppx_sexp_conv"
   ("mirage-no-xen" | ("mirage-xen" & "zarith-xen"))
   ("mirage-no-solo5" | ("mirage-solo5" & "zarith-freestanding"))
 ]
